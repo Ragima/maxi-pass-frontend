@@ -1,0 +1,59 @@
+{
+    "API_HOST_production": "/api",
+    "": "http://10.1.134.3:3000",
+    "API_HOST_development": "http://52.88.89.38/api",
+    "": "http://127.0.0.1:3001",
+    "": "http://174.129.179.171/api",
+    "auth": {
+        "sign_in": "/auth/sign_in",
+        "sign_up": "/auth",
+        "sign_out": "/auth/sign_out",
+        "validate_token": "/auth/validate_token",
+        "password": "/auth/password",
+        "enable_two_factor": "/api/v1/enable_two_factor",
+        "disable_two_factor": "/api/v1/disable_two_factor",
+        "reset_two_factor": "/auth/reset_otp"
+    },
+    "group": {
+        "create": "/api/v1/groups",
+        "get": "/api/v1/groups",
+        "delete": "/api/v1/groups",
+        "edit": "/api/v1/groups"
+    },
+    "vault": {
+        "create": "/api/v1/vaults",
+        "get": "/api/v1/vaults",
+        "delete": "/api/v1/vaults",
+        "edit": "/api/v1/vaults",
+        "vaultItems": "/api/v1/vaults"
+    },
+    "user": {
+        "invitations": "/api/v1/invitations",
+        "create": "/api/v1/users",
+        "get": "/api/v1/users",
+        "delete": "/api/v1/users",
+        "edit": "/api/v1/users",
+        "restore": "/api/v1/users",
+        "settings": "/api/v1/update_settings"
+    },
+    "invitation": {
+        "create": "/auth/invitation",
+        "get": "/auth/invitation",
+        "delete": "/auth/invitation",
+        "accept": "/auth/invitation",
+        "resend": "/auth/invitation/resend_invitation"
+    },
+    "link": {
+        "groupUsers": "/api/v1/group_users",
+        "groupVaults": "/api/v1/group_vaults",
+        "userVaults": "/api/v1/user_vaults"
+    },
+    "activity": {
+        "get": "/api/v1/activities",
+        "settings": "/api/v1/subscriptions",
+        "report": "/api/v1/activities/generate_report"
+    },
+    "pages": {
+        "home": "/api/v1/pages/home"
+    }
+}
